@@ -44,6 +44,8 @@ Você já aprendeu o que são e para que servem testes unitários. Já sabe usar
 
 - <p><a href="#1"> :pushpin: 1.</a> A função sum(a, b) retorna a soma do parâmetro a com o b;</p>
 
+- <p><a href="#2"> :pushpin: 2.</a> A função myRemove(arr, item) recebe um array arr e retorna uma cópia desse array sem o elemento item, caso ele exista no array;</p>
+
 
 
 ## :books: Exercícios
@@ -63,7 +65,22 @@ A função sum(a, b) retorna a soma do parâmetro a com o b
  <summary> :pencil2: Código Javascript</summary>
 
 ```js
+const sum = require('./exercise1');
 
+describe('função soma', () => {
+  it('Testa se o retorno de sum é 9', () => {
+    expect(sum(4, 5)).toBe(9);
+  });
+  it('Teste se o retorno de sum(0,0) é 0 ', () => {
+    expect(sum(0, 0)).toBe(0);
+  });
+  it('Teste se a função sum lança um erro quando os parâmetros são 4 e "5"', () => {
+    expect(() => sum(4, '5')).toThrow();
+  });
+  it('Teste se a mensagem de erro é "parameters must be numbers" quando realizar a chamada sum(4, "5")', () => {
+    expect(() => sum(4, '5')).toThrow('parameters must be numbers');
+  });
+});
 ```
 
 </details>
@@ -77,6 +94,13 @@ A função sum(a, b) retorna a soma do parâmetro a com o b
 #
 
 ### 2°
+
+A função myRemove(arr, item) recebe um array arr e retorna uma cópia desse array sem o elemento item, caso ele exista no array
+
+- Verifique se a chamada myRemove([1, 2, 3, 4], 3) retorna o array esperado
+- Verifique se a chamada myRemove([1, 2, 3, 4], 3) não retorna o array [1, 2, 3, 4]
+- Faça uma chamada para a função myRemove e verifique se o array passado por parâmetro não sofreu alterações
+- Verifique se a chamada myRemove([1, 2, 3, 4], 5) retorna o array esperado
 
 #### Resposta:
 
