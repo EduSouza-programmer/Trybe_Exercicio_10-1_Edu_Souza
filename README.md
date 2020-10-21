@@ -46,6 +46,8 @@ Você já aprendeu o que são e para que servem testes unitários. Já sabe usar
 
 - <p><a href="#2"> :pushpin: 2.</a> A função myRemove(arr, item) recebe um array arr e retorna uma cópia desse array sem o elemento item, caso ele exista no array;</p>
 
+- <p><a href="#3"> :pushpin: 3.</a> A função myRemoveWithoutCopy(arr, item) recebe um array arr e retorna o próprio array sem o elemento item, caso ele exista no array;</p>
+
 
 
 ## :books: Exercícios
@@ -140,13 +142,42 @@ describe('função que retira um item do array [myRemove]', () => {
 
 ### 3°
 
+A função myRemoveWithoutCopy(arr, item) recebe um array arr e retorna o próprio array sem o elemento item, caso ele exista no array
+
+- Verifique se a chamada myRemoveWithoutCopy([1, 2, 3, 4], 3) retorna o array esperado
+- Verifique se a chamada myRemoveWithoutCopy([1, 2, 3, 4], 3) não retorna o array [1, 2, 3, 4]
+- Faça uma chamada para a função myRemoveWithoutCopy e verifique se o array passado por parâmetro sofreu alterações
+- Verifique se a chamada myRemoveWithoutCopy([1, 2, 3, 4], 5) retorna o array esperado
+
 #### Resposta:
 
 <details>
  <summary> :pencil2: Código Javascript</summary>
 
 ```js
+const myRemovedWithoutCopy = require('./exercise3');
 
+const myArray = [1, 2, 3, 4];
+
+describe('Testes da função [myRemoveWithoutCopy]', () => {
+  it('Verifique se a chamada myRemoveWithoutCopy([1, 2, 3, 4], 3) retorna o array esperado', () => {
+    myRemovedWithoutCopy(myArray, 3);
+    expect(myArray).toEqual([1, 2, 4]);
+  });
+
+  it('Verifique se a chamada myRemoveWithoutCopy([1, 2, 3, 4], 3) não retorna o array [1, 2, 3, 4]', () => {
+    myRemovedWithoutCopy(myArray, 3);
+    expect(myArray).not.toEqual([1, 2, 3, 4]);
+  });
+  it('Faça uma chamada para a função myRemoveWithoutCopy e verifique se o array passado por parâmetro sofreu alterações', () => {
+    const myArray = [1, 2, 3, 4];
+    myRemovedWithoutCopy(myArray, 4);
+    expect(myArray).toEqual([1, 2, 3]);
+  });
+  it('Verifique se a chamada myRemoveWithoutCopy([1, 2, 3, 4], 5) retorna o array esperado', () => {
+    expect(myRemovedWithoutCopy([1, 2, 3, 4], 5)).toEqual(undefined);
+  });
+});
 ```
 
 </details>
