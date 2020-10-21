@@ -1,0 +1,16 @@
+{
+	"name": "10-1_primeiros_passos_no_jest",
+	"version": "1.0.0",
+	"description": "<h1 align=\"center\">     <img alt=\"Image Trybe\" src=\"https://i.ibb.co/d4W2x4g/trybe.png\" width=\"400px\" /> </h1>",
+	"main": "index.js",
+	"dependencies": {
+		"jest": "^26.6.0"
+	},
+	"devDependencies": {},
+	"scripts": {
+		"test": "jest"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC"
+}
