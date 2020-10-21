@@ -50,6 +50,8 @@ Você já aprendeu o que são e para que servem testes unitários. Já sabe usar
 
 - <p><a href="#4"> :pushpin: 4.</a> A função myFizzBuzz(num) recebe um número num e retorna "fizzbuzz" se o número for divisível por 3 e 5, retorna "fizz" se for divisível apenas por 3, retorna "buzz" se divisível apenas por 5, retorna o próprio número caso não seja divisível por 3 ou 5 e retorna false caso num não seja um número;</p>
 
+- <p><a href="#5"> :pushpin: 5.</a> Compare dois objetos (JSON) para verificar se são idênticos ou não.</p>
+
 
 
 
@@ -241,6 +243,8 @@ describe('Testes da função [myFizzBuzz]', () => {
 #
 
 ### 5°
+
+Compare dois objetos (JSON) para verificar se são idênticos ou não
 
 #### Resposta:
 
