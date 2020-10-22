@@ -52,6 +52,10 @@ Você já aprendeu o que são e para que servem testes unitários. Já sabe usar
 
 - <p><a href="#5"> :pushpin: 5.</a> Compare dois objetos (JSON) para verificar se são idênticos ou não.</p>
 
+Faça os exercícios fizzbuzz, palidrome, reverseInt e vowels _[deste repositório](https://github.com/iamgique/jest-exercises)_. Os testes para cada exercício já estão prontos. Você precisa completar as funções de cada exercício de forma que todos os testes passem. Clone o repositório ou copie os arquivos para sua máquina.
+
+- <p><a href="#6"> :pushpin: 6.</a> FizzBuzz.</p>
+
 
 
 
@@ -262,6 +266,98 @@ describe('Objetos test', () => {
     expect(obj3).not.toEqual(obj2);
   });
 });
+```
+
+</details>
+
+<p align="right">
+    <a href="#clipboard-Sumário">
+    <img alt="Back Sumário" src="https://img.shields.io/badge/Back-Sum%C3%A1rio-orange">
+  </a>
+</p>
+
+#
+
+### 6°
+
+FizzBuzz
+
+-  Write a program that console logs the numbers
+-  from 1 to n. But for multiples of three print
+-  “fizz” instead of the number and for the multiples
+-  of five print “buzz”. For numbers which are multiples
+- of both three and five print “fizzbuzz”.
+
+#### Resposta:
+
+<details>
+ <summary> :pencil2: Código Javascript</summary>
+
+```js
+
+```
+
+</details>
+
+<p align="right">
+    <a href="#clipboard-Sumário">
+    <img alt="Back Sumário" src="https://img.shields.io/badge/Back-Sum%C3%A1rio-orange">
+  </a>
+</p>
+
+#
+
+### 7°
+
+#### Resposta:
+
+<details>
+ <summary> :pencil2: Código Javascript</summary>
+
+```js
+
+```
+
+</details>
+
+<p align="right">
+    <a href="#clipboard-Sumário">
+    <img alt="Back Sumário" src="https://img.shields.io/badge/Back-Sum%C3%A1rio-orange">
+  </a>
+</p>
+
+#
+
+### 8°
+
+#### Resposta:
+
+<details>
+ <summary> :pencil2: Código Javascript</summary>
+
+```js
+
+```
+
+</details>
+
+<p align="right">
+    <a href="#clipboard-Sumário">
+    <img alt="Back Sumário" src="https://img.shields.io/badge/Back-Sum%C3%A1rio-orange">
+  </a>
+</p>
+
+#
+
+### 9°
+
+#### Resposta:
+
+<details>
+ <summary> :pencil2: Código Javascript</summary>
+
+```js
+
 ```
 
 </details>
