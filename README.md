@@ -56,6 +56,8 @@ Faça os exercícios fizzbuzz, palidrome, reverseInt e vowels _[deste repositór
 
 - <p><a href="#6"> :pushpin: 6.</a> FizzBuzz.</p>
 
+- <p><a href="#6"> :pushpin: 6.</a> Palindrome.</p>
+
 
 
 
@@ -294,7 +296,25 @@ FizzBuzz
  <summary> :pencil2: Código Javascript</summary>
 
 ```js
-
+function fizzBuzz(n) {
+  Array.from({ length: `${n + 1}` }, (num, index) => {
+    const fizzBuzz = index % 3 === 0 && index % 5 === 0;
+    const fizz = index % 3 === 0;
+    const buzz = index % 5 === 0;
+    if (index === 0) return;
+    if (fizzBuzz) {
+      console.log('fizzbuzz');
+      return;
+    } else if (buzz) {
+      console.log('buzz');
+      return;
+    } else if (fizz) {
+      console.log('fizz');
+      return;
+    }
+    console.log(index);
+  });
+}
 ```
 
 </details>
@@ -309,13 +329,24 @@ FizzBuzz
 
 ### 7°
 
+Palindrome
+
+- Given a string, return true if the string is a palindrome
+- or false if it is not.  Palindromes are strings that
+- form the same word if it is reversed. *Do* include spaces
+- and punctuation in determining if the string is a palindrome.
+
 #### Resposta:
 
 <details>
  <summary> :pencil2: Código Javascript</summary>
 
 ```js
-
+function palindrome(str) {
+  const strInvert = str.split('').reverse().join('');
+  if (str !== strInvert) return false;
+  return true;
+}
 ```
 
 </details>
