@@ -56,7 +56,9 @@ Faça os exercícios fizzbuzz, palidrome, reverseInt e vowels _[deste repositór
 
 - <p><a href="#6"> :pushpin: 6.</a> FizzBuzz.</p>
 
-- <p><a href="#6"> :pushpin: 6.</a> Palindrome.</p>
+- <p><a href="#7"> :pushpin: 7.</a> Palindrome.</p>
+
+- <p><a href="#8"> :pushpin: 8.</a> Reverseint.</p>
 
 
 
@@ -297,7 +299,7 @@ FizzBuzz
 
 ```js
 function fizzBuzz(n) {
-  Array.from({ length: `${n + 1}` }, (num, index) => {
+  Array.from({ length: `${n + 1}` }, (_, index) => {
     const fizzBuzz = index % 3 === 0 && index % 5 === 0;
     const fizz = index % 3 === 0;
     const buzz = index % 5 === 0;
@@ -361,13 +363,23 @@ function palindrome(str) {
 
 ### 8°
 
+Reverseint
+
+Given an integer, return an integer that is the reverse ordering of numbers.
+
 #### Resposta:
 
 <details>
  <summary> :pencil2: Código Javascript</summary>
 
 ```js
-
+function reverseInt(n) {
+  const numberReverseNegative = -Number(
+    Math.abs(n).toString().split('').reverse().join('')
+  );
+  const numberReverse = Number(String(n).split('').reverse().join(''));
+  return n < 0 ? numberReverseNegative : numberReverse;
+}
 ```
 
 </details>
