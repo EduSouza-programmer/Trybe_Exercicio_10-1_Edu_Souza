@@ -60,6 +60,8 @@ Faça os exercícios fizzbuzz, palidrome, reverseInt e vowels _[deste repositór
 
 - <p><a href="#8"> :pushpin: 8.</a> Reverseint.</p>
 
+- <p><a href="#9"> :pushpin: 9.</a> Vowels.</p>
+
 
 
 
@@ -394,13 +396,20 @@ function reverseInt(n) {
 
 ### 9°
 
+Vowels
+
+Write a function that returns the number of vowels used in a string.  Vowels are the characters 'a', 'e' 'i', 'o', and 'u'.
+
 #### Resposta:
 
 <details>
  <summary> :pencil2: Código Javascript</summary>
 
 ```js
-
+function vowels(str) {
+  const re = /[aAeEiIoOuU]/g;
+  return (str.match(re) || []).length;
+}
 ```
 
 </details>
