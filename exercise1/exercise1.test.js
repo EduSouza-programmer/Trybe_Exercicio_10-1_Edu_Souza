@@ -1,4 +1,3 @@
-const myRemove = require('../exercise2/exercise2');
 const sum = require('./exercise1');
 
 describe('função soma', () => {
